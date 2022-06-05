@@ -1,47 +1,51 @@
 const canvas = document.querySelector(".neve");
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = document.body.scrollHeight;
 
-console.log(canvas.height, window.innerHeight)
+let flocosDeNeve = [];
 
-let flocosDeNeve = []
-
-for(let i = 0; i < 200; i++ ){
-    flocosDeNeve.push({x: Math.random()*canvas.width, y: Math.random()*canvas.height, i: 0, r: Math.random() + 1.2})
+function draw_floco(floco) {
+  ctx.beginPath();
+  ctx.arc(floco.x, floco.y, floco.r, 0, Math.PI * 2);
+  ctx.fillStyle = "#fff";
+  ctx.fill();
 }
 
-ctx.beginPath()
-ctx.moveTo(canvas.width/2, 0)
-ctx.lineTo(canvas.width/2, canvas.height)
-ctx.strokeStyle= "#fff"
-ctx.stroke()
+function animacao() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let floco of flocosDeNeve) {
+    draw_floco(floco);
 
-function animacao(){
+    floco.y += floco.r / 2;
+    floco.x += Math.sin(floco.i);
+    floco.i += Math.random() * Math.random() * 0.1;
 
-    ctx.clearRect(0,0, canvas.width, canvas.height)
-    for (let floco of flocosDeNeve){
-        ctx.beginPath()
-        ctx.arc(floco.x, floco.y, floco.r, 0, Math.PI*2)
-        ctx.fillStyle= "#fff"
-        ctx.fill()
-
-        floco.y += floco.r / 2
-        floco.x += Math.sin(floco.i)
-        floco.i += Math.random() * Math.random() * 0.1
-
-        if(floco.y > canvas.height){
-            floco.y = 0
-        }
+    if (floco.y > canvas.height) {
+      floco.y = 0;
+      floco.x = Math.random() * canvas.width;
     }
+  }
 
-    requestAnimationFrame(animacao)
+  requestAnimationFrame(animacao);
 }
 
+window.addEventListener("resize", resize_canvas(canvas));
 
+window.onload = () => {
+  resize_canvas(canvas);
+  for (let i = 0; i < canvas.width/8; i++) {
+    flocosDeNeve.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      i: Math.random() * Math.random() < 0.5 ? -1 : 1,
+      r: Math.random() + 1.6,
+    });
+  }
+  console.log(flocosDeNeve.length)
+  console.log(document.body)
+  animacao();
+};
 
-animacao()
-
-// TODO 
-// Resize event
-// movimento mais orgânico
+function resize_canvas(canvas) {
+  canvas.height = document.documentElement.scrollHeight;
+  canvas.width = document.documentElement.scrollWidth;
+}

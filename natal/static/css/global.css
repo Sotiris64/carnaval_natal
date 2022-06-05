@@ -1,40 +1,37 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 * {
-  margin: 0;
-  padding: 0;
-  line-height: calc(1em + 0.725rem);
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.725rem);
+}
+html,
+body {
+    height: 100%;
 }
 body {
-  min-height: 100vh;
-}
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 img,
 picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
-}
-canvas {
-  height: 100vh;
-  width: 100vw;
+    display: block;
+    max-width: 100%;
 }
 input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 button {
   background: none;
@@ -46,16 +43,15 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 #root,
 #__next {
-  isolation: isolate;
+    isolation: isolate;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
-body {
-  font-family: "Rubik", sans-serif;
+body{
+    font-family: 'Rubik', sans-serif;
 }
