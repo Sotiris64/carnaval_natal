@@ -40,12 +40,10 @@ window.onload = () => {
       r: Math.random() + 1.6,
     });
   }
-  console.log(flocosDeNeve.length)
-  console.log(document.body)
   animacao();
 };
 
 function resize_canvas(canvas) {
   canvas.height = document.documentElement.scrollHeight;
-  canvas.width = document.documentElement.scrollWidth;
+  canvas.width = window.innerWidth;
 }

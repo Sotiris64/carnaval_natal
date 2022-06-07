@@ -20,9 +20,8 @@ html, body{
 canvas{
     display: block;
     position: absolute;
-
-    width: 100%; 
     z-index: 9;
+    width: 100%; 
 }
 .album{
     background-color: #050E1D
@@ -92,6 +91,11 @@ canvas{
      color: white;
      font-size: 2rem;
      font-weight: 900;
+     margin: 0 1rem;
+ }
+ .controls {
+    z-index: 99;
+
  }
 
  .controls li:hover{
