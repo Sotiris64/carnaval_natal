@@ -30,7 +30,13 @@ function animacao() {
 
 window.addEventListener("resize", resize_canvas(canvas));
 
-window.onload = () => {
+function resize_canvas(canvas) {
+  canvas.height = document.documentElement.scrollHeight;
+  canvas.width = window.innerWidth;
+}
+
+(() => {
+  console.log('hi')
   resize_canvas(canvas);
   for (let i = 0; i < canvas.width/8; i++) {
     flocosDeNeve.push({
@@ -41,9 +47,4 @@ window.onload = () => {
     });
   }
   animacao();
-};
-
-function resize_canvas(canvas) {
-  canvas.height = document.documentElement.scrollHeight;
-  canvas.width = window.innerWidth;
-}
+})();
