@@ -1,5 +1,5 @@
 body{
-    background-color:  #0c2237;
+    background-color:  #050E1B;
     color: white;
     overflow-x: hidden;
 }
@@ -12,6 +12,20 @@ html, body{
     width: 100%;
     z-index: 99;
     font-weight: bold;
+    padding: .8vh 1vw;
+    top: 0;
+}
+
+.logo{
+    width: 6rem;
+}
+
+#turismo{
+    filter: brightness(255);
+}
+
+#logoFriburgo{
+    width: 4.5rem;
 }
 
 .navbar a {
@@ -31,6 +45,20 @@ canvas{
     width: 100%;
 }
 
+.button{
+    padding: .7rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: #0C2237;
+    border-radius: 9px;
+    color: white;
+}
+
+.button:hover{
+    transition: 150ms;
+    filter: blur(100);
+    cursor:wait;
+}
+
 .banner{
     width: 100%;
     height: 80vh;
@@ -41,6 +69,9 @@ canvas{
     top: 90%;
     right: 50%;
     transform: translate(50%, -50%);
+    z-index: 99;
+    display: flex;
+    gap: 2rem;
 }
 
 .quotes{
@@ -84,18 +115,16 @@ canvas{
      display: flex;
      align-items: center;    
      justify-content: space-between;
-
  }
 
  .controls li{
      color: white;
-     font-size: 2rem;
+     font-size: 2.5rem;
      font-weight: 900;
-     margin: 0 1rem;
+     margin: 0 .5rem;
  }
  .controls {
     z-index: 99;
-
  }
 
  .controls li:hover{
@@ -139,11 +168,18 @@ canvas{
 
 .slideShow .controls button{
     color: white;
-    font-size: 5rem;
+    font-size: 2.5rem;
     border: none;
+    padding: .8rem;
+    margin: 0 1rem;
+    background-color: rgba(15,15,15, .5);
+    border-radius: 50%;
 
 }
 
+#backButton{
+    transform: rotate(-180deg);
+}
 .slide-item {
     position: absolute;
     width: 100%;
@@ -158,4 +194,69 @@ canvas{
 .active-slide{
     transition: transform 350ms;
     z-index: 1;
+}
+
+.sobre{
+    max-width: 80em;
+    margin: 10rem auto 0;
+
+    padding: 2rem;
+}
+
+.sobre section{
+    display: grid;
+    grid-template-rows: repeat(2);
+    row-gap: 5vh;
+}
+.sobre section .text-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+
+
+}
+
+.akaBackground{
+    width: 100%;
+    height: 100%;
+}
+
+.sobre p{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.text-block{
+    font-size: 1.2rem;
+}
+
+footer{
+    margin: auto auto 0;
+}
+
+.parceiros{
+    display: grid;
+    justify-items: center;
+}
+.a-footer{
+    color: darkgray;
+    list-style: none;
+}
+.list-unstyled .a-footer:hover{
+
+    color: #fff;
+
+}
+.parceiros img{
+    width: 7rem;
+}
+.parceiros .brightness{
+    filter: brightness(255);
+}
+.parceiros .darkness{
+    filter: grayscale(1);
+}
+.logo-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }

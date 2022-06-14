@@ -4,3 +4,5 @@ from django.shortcuts import render
 def index(req):
     return render(req, "natal/index.html")
     
+def sobre(req):
+    return render(req, "natal/sobre.html")
