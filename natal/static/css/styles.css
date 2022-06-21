@@ -48,15 +48,14 @@ canvas{
 .button{
     padding: .7rem 1.5rem;
     font-size: 1.5rem;
+    font-weight: 700;
     background-color: #0C2237;
     border-radius: 9px;
-    color: white;
+    color: #CF9C60;
 }
 
 .button:hover{
     transition: 150ms;
-    filter: blur(100);
-    cursor:wait;
 }
 
 .banner{
