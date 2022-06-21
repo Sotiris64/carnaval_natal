@@ -72,14 +72,8 @@ WSGI_APPLICATION = 'carnaval_natal.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-
-        'NAME': db_name,
-        'PORT': '',
-
-        'USER': db_user,
-        'PASSWORD': db_passwd,
-        'HOST': '127.0.0.1',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
 

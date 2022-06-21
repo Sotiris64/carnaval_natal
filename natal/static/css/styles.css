@@ -30,6 +30,7 @@ html, body{
 
 .navbar a {
     color: inherit;
+    margin-right: 1.5rem;
 }
 canvas{
     display: block;
