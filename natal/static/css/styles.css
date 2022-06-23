@@ -273,3 +273,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+<<<<<<< HEAD
+=======
+.logo-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+}
+>>>>>>> 425aebb361f9224823721481b0035337cd2e6328
