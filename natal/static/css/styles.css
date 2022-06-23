@@ -8,14 +8,14 @@ body {
   height: 100%;
 }
 .navbar {
-  color: #E6B572;
+  color: #e6b572;
   position: fixed;
   width: 100%;
   z-index: 99;
   font-weight: bold;
   padding: 0.8vh 1vw;
   top: 0;
-  background-color: rgba(5, 14, 27, .7);
+  background-color: rgba(5, 14, 27, 0.7);
   font-size: 1.3rem;
   z-index: 999;
 }
@@ -51,34 +51,27 @@ canvas {
 }
 
 .button {
-  padding: 0.7rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   font-size: 1.5rem;
   font-weight: 700;
-  border-radius: 9px;
+  border-radius: 6px;
   color: #cf9c60;
   border: 2px solid #cf9c60;
-  animation: rainbowAnimation 10s infinite forwards;
-
-
-
+  /* animation: rainbowAnimation 20s infinite forwards; */
 }
-
 
 .button:hover {
   transition: 150ms;
-  color: transparent;
-  background-image: url("/static/imgs/snow.png");
-
 }
-
-@keyframes rainbowAnimation{
+/* 
+@keyframes rainbowAnimation {
   0% {
-    background-position-x: 0%
+    background-position-y: 0%;
   }
   100% {
-    background-position-x: 50vw
+    background-position-y: 50vw;
   }
-}
+} */
 
 .banner {
   width: 100%;
@@ -273,11 +266,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-<<<<<<< HEAD
-=======
-.logo-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: auto;
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
 }
->>>>>>> 425aebb361f9224823721481b0035337cd2e6328
