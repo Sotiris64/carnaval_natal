@@ -53,31 +53,27 @@ canvas {
 }
 
 .button {
-  padding: 0.7rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   font-size: 1.5rem;
   font-weight: 700;
-  border-radius: 9px;
+  border-radius: 6px;
   color: #cf9c60;
   border: 2px solid #cf9c60;
-  animation: rainbowAnimation 10s infinite forwards;
-  transition: 150ms;
+  /* animation: rainbowAnimation 20s infinite forwards; */
 }
 
 .button:hover {
-  
-  color: transparent;
-  background-image: url("/static/imgs/snow.png");
-  color: aliceblue;
+  transition: 150ms;
 }
-
+/* 
 @keyframes rainbowAnimation {
   0% {
-    background-position-x: 0%;
+    background-position-y: 0%;
   }
   100% {
-    background-position-x: 50vw;
+    background-position-y: 50vw;
   }
-}
+} */
 
 .banner {
   width: 100%;
@@ -246,31 +242,36 @@ canvas {
 
 footer {
   margin: auto auto 0;
+  z-index: 9;
 }
-
-.parceiros {
-  display: grid;
-  justify-items: center;
+.text-small .a-footer{
+    color: darkgrey;
+    transition: 150ms;
 }
-
-.list-unstyled .a-footer:hover {
-  color: #fff;
+li .a-footer:hover {
+    color: #fff;
+  }
+.parceiros-int {
+  display: flex;
+  flex-wrap: wrap;
 }
-.parceiros img {
-  width: 7rem;
+.parceiros-int img {
+  width: 10rem;
 }
-.parceiros .brightness {
+/*.parceiros .brightness {
   filter: brightness(255);
 }
 .parceiros .darkness {
   filter: grayscale(1);
-}
-.logo-grid {
+}*/
+.footer-inf {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
 }
-.a-footer {
-    color: darkgray;
-    list-style: none;
-  }
+
+.footer-inf {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
