@@ -42,7 +42,7 @@ function resize_canvas(canvas) {
     flocosDeNeve.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      i: Math.random() * Math.random() < 0.5 ? -1 : 1,
+      i: Math.random() * Math.PI * 2,
       r: Math.random() + 1.6,
     });
   }
