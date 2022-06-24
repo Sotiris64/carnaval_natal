@@ -19,7 +19,9 @@ body {
   font-size: 1.3rem;
   z-index: 999;
 }
-
+.nav-link:hover {
+  color: #fff;
+}
 .logo {
   width: 5rem;
 }
@@ -235,33 +237,29 @@ canvas {
 
 footer {
   margin: auto auto 0;
+  z-index: 9;
 }
-
-.parceiros {
-  display: grid;
-  justify-items: center;
+.text-small .a-footer{
+    color: darkgrey;
+    transition: 150ms;
 }
-.a-footer {
-  color: darkgray;
-  list-style: none;
+li .a-footer:hover {
+    color: #fff;
+  }
+.parceiros-int {
+  display: flex;
+  flex-wrap: wrap;
 }
-.list-unstyled .a-footer:hover {
-  color: #fff;
+.parceiros-int img {
+  width: 10rem;
 }
-.parceiros img {
-  width: 7rem;
-}
-.parceiros .brightness {
+/*.parceiros .brightness {
   filter: brightness(255);
 }
 .parceiros .darkness {
   filter: grayscale(1);
-}
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.logo-grid {
+}*/
+.footer-inf {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
@@ -278,4 +276,11 @@ h1{
 .hero:hover  h1{
   top: 0%;
   color: red;
+}
+
+.footer-inf {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+
 }
