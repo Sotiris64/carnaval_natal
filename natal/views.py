@@ -6,3 +6,6 @@ def index(req):
     
 def sobre(req):
     return render(req, "natal/sobre.html")
+
+def casaDoPapaiNoel(req):
+    return render(req, "natal/casaDoPapaiNoel.html")
