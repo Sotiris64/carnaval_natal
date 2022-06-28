@@ -279,8 +279,8 @@ li .a-footer:hover {
   top: -50%;
   right: 50%;
   transform: translate(calc(50% + 5rem), -50%);
-  z-index: 999;
-  transition: all 550ms ease-out;
+  z-index: 99;
+  transition: all 750ms ease-out;
   font-size: 5rem;
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
