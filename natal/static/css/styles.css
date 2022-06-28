@@ -59,11 +59,15 @@ canvas {
   border-radius: 6px;
   color: #cf9c60;
   border: 2px solid #cf9c60;
-  transition: 150ms;
+  background-position:left bottom;
+  background: linear-gradient(to left, rgba(0,0,0,0), #cf9c60 50%) right;
+  background-size: 300%;
+  transition: .5s ease-out;
 }
 
 .button:hover {
   color: #fff;
+  background-position: left;
 }
 
 .banner {
@@ -274,12 +278,12 @@ li .a-footer:hover {
   position: absolute;
   top: -50%;
   right: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(calc(50% + 5rem), -50%);
   z-index: 999;
   transition: all 550ms ease-out;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bolder;
-  background-color: rgba(0, 0, 0, .3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .NOW{
