@@ -298,18 +298,32 @@ li .a-footer:hover {
 .footer-inf img {
   margin-bottom: 0.7rem;
 }
-
+/*casa do papai noel*/
 .informacoesDiversas{
-  margin: 3rem 0;
+  margin: 15rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
+}
+.texto p{
+  text-align: justify;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.texto h3{
+  margin-bottom: 3rem;
+}
+.texto{
+  margin: 0 3rem 0 0;
+}
+.texto-dois{
+  max-width: 85em;
+}
 .sla{
   display: grid;
   grid-template-columns: 3fr 1fr;
-  max-width: 90em;
+  max-width: 85em;
   margin: 3rem auto;
 }
 
