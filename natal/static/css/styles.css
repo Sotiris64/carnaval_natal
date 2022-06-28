@@ -59,10 +59,11 @@ canvas {
   border-radius: 6px;
   color: #cf9c60;
   border: 2px solid #cf9c60;
+  transition: 150ms;
 }
 
 .button:hover {
-  transition: 150ms;
+  color: #fff;
 }
 
 .banner {
@@ -163,7 +164,6 @@ canvas {
 .active-slide {
   transition: all 450ms;
   opacity: 1;
-  
 }
 
 .slide-to-left {
@@ -239,48 +239,104 @@ footer {
   margin: auto auto 0;
   z-index: 9;
 }
-.text-small .a-footer{
-    color: darkgrey;
-    transition: 150ms;
+.text-small .a-footer {
+  color: darkgrey;
+  transition: 150ms;
 }
 li .a-footer:hover {
-    color: #fff;
-  }
-.parceiros-int {
+  color: #fff;
+}
+.parceiros {
+  margin-bottom: 2rem;
+}
+.parceiros-box-int {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.parceiros-int img {
-  width: 10rem;
+.parceiros-box-int img {
+  width: 12rem;
 }
-/*.parceiros .brightness {
-  filter: brightness(255);
+.box-pat {
+  margin: 2em;
+  padding: 1rem;
+  display: flex;
+  align-items: center
 }
-.parceiros .darkness {
-  filter: grayscale(1);
-}*/
 .footer-inf {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
+  justify-items: center;
 }
 
-h1{
+.title-papaiNoel {
   position: absolute;
-  top: 50%;
+  top: -50%;
   right: 50%;
   transform: translate(50%, -50%);
   z-index: 999;
+  transition: all 550ms ease-out;
+  font-size: 3rem;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, .3);
 }
 
-.hero:hover  h1{
-  top: 0%;
-  color: red;
+.NOW{
+  top: 50%;
 }
 
-.footer-inf {
+.footer-inf{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
+}
+.footer-inf img {
+  margin-bottom: 0.7rem;
+}
 
+.informacoesDiversas{
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacoes, .direcoes{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.googleMaps{
+  width: 800px;
+  height: 500px;
+  background-color: white;
+}
+
+.informacoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacoes ul li{
+  list-style: none;
+}
+
+.lazyIcon{
+  font-size: 3rem;
+  color: #3C9733;
+}
+
+.informacoes ul li span{
+  vertical-align: middle;
+
+}
+.slide-natal {
+  width: 70%;
+  height: 80vh;
+  max-width: 100em;
+}
+.desc-noel{
+  max-width: 50rem;
 }
