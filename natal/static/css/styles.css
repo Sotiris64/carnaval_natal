@@ -299,7 +299,9 @@ li .a-footer:hover {
   margin: auto;
 }
 .footer-inf img {
-  margin-bottom: 0.7rem;
+  margin-bottom: 2rem;
+  width: 12rem;
+  height: 5rem;
 }
 /*casa do papai noel*/
 .informacoesDiversas{
@@ -334,4 +336,48 @@ li .a-footer:hover {
   width: 800px;
   height: 500px;
   background-color: white;
+}
+
+.icones section img{
+  width: 2rem;
+  filter:  brightness(0) invert(1);
+}
+.icones section span{
+  font-size: 1.3rem;
+}
+.icones section{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icones{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+#dolar-dolar img{
+  width: 3rem;
+}
+#banner-casa{
+  width: 100vw;
+  height: 80vh;
+  background-attachment: fixed;
+  background-image:  url("/static/imgs/01012012-DSCN0060.jpg"); 
+}
+.natal-hero{
+
+}
+.feed{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transform: translateY(-50%);
+
+}
+.feed img{
+  border: 1rem solid white;
+  width: 25vw;
+  height: 50vh;
 }
