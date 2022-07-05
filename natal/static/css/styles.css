@@ -369,6 +369,8 @@ li .a-footer:hover {
   position: relative;
   background-attachment: fixed;
   background-image:  url("/static/imgs/01012012-DSCN0060.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .natal-hero{
   margin-bottom: 20rem;
