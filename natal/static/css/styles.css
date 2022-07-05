@@ -247,7 +247,7 @@ footer {
   margin: auto auto 0;
   z-index: 9;
 }
-.text-small .a-footer {
+li .a-footer {
   color: darkgrey;
   transition: 150ms;
 }
@@ -296,13 +296,9 @@ li .a-footer:hover {
 
 .footer-inf{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: auto;
-}
-.footer-inf img {
-  margin-bottom: 2rem;
-  width: 20rem;
-  height: 5rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 1rem;
 }
 /*casa do papai noel*/
 
