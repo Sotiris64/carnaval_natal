@@ -19,6 +19,7 @@ body {
   background-color: rgba(5, 14, 27, 0.5);
   font-size: 1.2rem;
   z-index: 999;
+  height: 6rem;
 }
 .nav-link:hover {
   color: #fff;
@@ -91,10 +92,10 @@ canvas {
   padding: 6rem;
 }
 .text-block {
-
-  width: 60%;
+  max-width: 90em;
   margin: 10rem auto;
   text-align: justify;
+  padding: 0 1rem;
 }
 
 .slider-container {
@@ -149,7 +150,7 @@ canvas {
 .card-carousel {
   text-align: center;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 25vw;
   color: #fff;
   border-radius: 5px;
   font-family: sans-serif;
