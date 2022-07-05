@@ -1,20 +1,28 @@
 {% extends "natal/template.html" %}
 {% block JSTemplate %}
-<script src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js" type="text/javascript"></script>
+<script src="/static/js/vara.min.js"></script>
+<script src="/static/js/title.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<script src="/static/js/neve.js" defer></script>
+
 {% endblock %}
 
 {% block main %}
 <main>
+  <canvas class="neve"></canvas>
+
   <div class="natal-hero">
     <div id="banner-casa">
-    <h1>FRASE DAHORA</h1>
+    <div id="natal-titulo"></div>
     </div>
     <div class="feed">
       <img
         src="/static/imgs/1576783569-61d5ab9f9e79eb6bffd36da1ec549210.png"
         alt=""
       /><img
-        src="/static/imgs/1576783569-61d5ab9f9e79eb6bffd36da1ec549210.png"
+        src="/static/imgs/iStock-515199815.png"
         alt=""
       /><img
         src="/static/imgs/1576783569-61d5ab9f9e79eb6bffd36da1ec549210.png"
@@ -23,42 +31,18 @@
     </div>
   </div>
 
-  <section class="informacoesDiversas">
-    <div class="moreText">
-      <h3>LOREM IMPSUM</h3>
 
-      <div class="sla">
         <div class="texto">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            maiores nam eaque consectetur rerum vitae quisquam corrupti sit
-            illo, accusamus qui ullam at eum veniam eligendi. Fugit dignissimos
-            impedit quos?
+            Abacate é muito bom para a pele e para saúde devido ao seu complexo de vitaminas extenso que não irei citar agora porque são muitos enfim, este é um aviso do ministério da saúde, governo federal. Patria amada brasil
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            maiores nam eaque consectetur rerum vitae quisquam corrupti sit
-            illo, accusamus qui ullam at eum veniam eligendi. Fugit dignissimos
-            impedit quos? Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Ipsam beatae in quod iusto ipsum repudiandae, nostrum officia
-            neque. Nobis iusto ipsa odio! Enim sequi expedita a ipsum, assumenda
-            quis sit? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Corrupti ea illum ad sed dolor aliquam optio in officia facere,
-            consequuntur omnis quo eveniet nostrum? Neque aliquid provident
-            culpa nostrum consectetur. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quia saepe nulla neque iusto dicta? Nesciunt
-            cumque pariatur in dolor aliquam, similique eius quaerat aperiam
-            eveniet autem, ad accusantium minima inventore! Lorem ipsum dolor
-            sit, amet consectetur adipisicing.
-          </p>
+            Venha para a casa do papai noel comer um bolo de laranja. O espirito natalino espera por você debaixo da sua camsa, se reúna com seus familiares e amigos para comemorar esta data tão querida por todos que proporciona o melhor dos melhores feriados que existem na face da Terra. Traga seu filho, ou filha... ou filhe enfim traga a sua prole para tirar uma foto com o bom e velho velhinho
+          </p> 
         </div>
-        <img
-          src="/static/imgs/1576783569-61d5ab9f9e79eb6bffd36da1ec549210.png"
-        />
-      </div>
-    </div>
 
     <div class="icones">
+      <div>
       <section>
         <img src="/static/imgs/calendar.svg" alt="" />
         <span>De 1 de dezembro até 2 de janeiro</span>
@@ -71,10 +55,11 @@
         <img src="/static/imgs/dolar.svg" alt="" /><span>Entrada Franca</span>
       </section>
     </div>
+    </div>
 
     <div class="direcoes">
       <h3>Onde nos encontrar!</h3>
-      <div class="googleMaps">INSERIR PARADINHA DO GOOGLE MAPS AQUI</div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Pra%C3%A7a%20Demerval%20Barbosa%20Moreira,%201113-1185%20-%20Centro,%20Nova%20Friburgo%20-%20RJ,%2028605-020&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div></div>
     </div>
   </section>
 </main>
