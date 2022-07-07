@@ -34,8 +34,12 @@ function resize_canvas(canvas) {
   canvas.height = document.documentElement.scrollHeight;
   canvas.width = window.innerWidth;
 
+
+}
+
+(() => {
+  resize_canvas(canvas);
   flocosDeNeve = []
-  console.log('hi')
   for (let i = 0; i < canvas.width/6; i++) {
     flocosDeNeve.push({
       x: Math.random() * canvas.width,
@@ -44,10 +48,5 @@ function resize_canvas(canvas) {
       r: Math.random() + 1.6,
     });
   }
-}
-
-(() => {
-  resize_canvas(canvas);
-
   animacao();
 })();

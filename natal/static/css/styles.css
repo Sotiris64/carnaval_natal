@@ -211,6 +211,9 @@ canvas {
   width: 100%;
   height: 100%;
 }
+#eventos{
+  z-index: 999;
+}
 
 .sobre {
   max-width: 80em;
@@ -407,7 +410,6 @@ li .a-footer:hover {
 }
 
 @media (max-width: 44em) {
-
   .box-pat{
     width: 7rem ;
 
