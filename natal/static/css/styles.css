@@ -272,13 +272,14 @@ li .a-footer:hover {
   display: flex;
   align-items: center
 }
-.footer-inf {
+.footer-inf{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1rem;
   margin: auto;
   justify-items: center;
 }
-
 .title-papaiNoel {
   position: absolute;
   top: -50%;
@@ -295,12 +296,7 @@ li .a-footer:hover {
   top: 50%;
 }
 
-.footer-inf{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
-  row-gap: 1rem;
-}
+
 /*casa do papai noel*/
 
 .texto p{
@@ -412,6 +408,10 @@ li .a-footer:hover {
     width: 7rem ;
 
   }
+  .footer-inf{
+    
+  }
+
 }
 
 @media (max-width: 34em) {
