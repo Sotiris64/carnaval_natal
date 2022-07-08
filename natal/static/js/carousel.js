@@ -14,9 +14,9 @@ window.onload = () => {
     changeSlide(true);
   });
 
-   let interval = setInterval(()=>{
-     changeSlide(true)
-   }, 5500)
+  let interval = setInterval(() => {
+      changeSlide(true);
+    }, 5500);
 
   function changeSlide(next) {
     if (isClickable) {
@@ -26,25 +26,22 @@ window.onload = () => {
       if (next) {
         active.className = "slide-item slide-to-right";
         active = slides[(index + 1) % slides.length];
-        setTimeout(() => {
+
           active.className = "slide-item active-slide";
           isClickable = true;
           clearInterval(interval);
-          interval= setInterval(()=>{
-            changeSlide(true)
-          }, 5500)
-        }, 150);
+          interval = setInterval(() => {
+            changeSlide(true);
+          }, 5500);
       } else {
         active.className = "slide-item slide-to-left";
         active = slides[(index - 1 + slides.length) % slides.length];
-        setTimeout(() => {
           active.className = "slide-item active-slide";
           isClickable = true;
           clearInterval(interval);
-          interval= setInterval(()=>{
-            changeSlide(true)
-          }, 5500)
-        }, 150);
+          interval = setInterval(() => {
+            changeSlide(true);
+          }, 5500);
       }
     }
   }
