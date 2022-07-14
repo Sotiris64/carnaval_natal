@@ -306,6 +306,10 @@ li .a-footer:hover {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+.info-container{
+  display: flex;
+  flex-direction: column;
+}
 .info-links-1{
   margin-top: 0.5rem;
 }
@@ -430,9 +434,13 @@ li .a-footer:hover {
     padding: 0 2rem;
   }
   .footer-inf{
-    flex-direction: column
-
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+  }
+  .info-container{
+    align-items: center;
+    margin-bottom: 2rem;
   }
 }
 
