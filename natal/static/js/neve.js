@@ -37,7 +37,7 @@ function resize_canvas(canvas) {
 
 }
 
-(() => {
+window.onload = () => {
   resize_canvas(canvas);
   flocosDeNeve = []
   for (let i = 0; i < canvas.width/6; i++) {
@@ -49,4 +49,4 @@ function resize_canvas(canvas) {
     });
   }
   animacao();
-})();
+};

@@ -399,7 +399,10 @@ li .a-footer:hover {
   width: 25.6vw;
   height: 60vh;
 }
-
+#natal-titulo svg g{
+  background-color: red;
+  
+}
 
 /* 1360 */
 @media (max-width: 85em) {
